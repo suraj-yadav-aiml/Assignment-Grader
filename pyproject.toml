@@ -6,7 +6,9 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "fastapi>=0.115.12",
+    "fpdf>=1.7.2",
     "fuzzywuzzy>=0.18.0",
+    "humanize>=4.12.2",
     "openai>=1.75.0",
     "pymupdf>=1.25.5",
     "python-docx>=1.1.2",
