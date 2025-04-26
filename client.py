@@ -452,7 +452,8 @@ Language & Style (20%): Utilizes expressive language with varied sentence struct
 # Tab 3: Results
 with tab3:
     st.header("Grading Results")
-    st.subheader(f"Results for: {st.session_state['file_name']}")
+    if 'file_name' in st.session_state:
+        st.subheader(f"Results for: {st.session_state['file_name']}")
 
     # st.code(st.session_state['grade_results'])
     # st.code(st.session_state["plagiarism_results"])
